@@ -1,0 +1,77 @@
+﻿Build started 12/14/2013 4:14:43 PM.
+     1>Project "c:\Users\Lucas\documents\visual studio 2013\Projects\Vector\Vector\Vector.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\..\..\Vector Files\beam.cpp" "..\..\..\..\Vector Files\block.cpp" "..\..\..\..\Vector Files\camera.cpp" "..\..\..\..\Vector Files\client.cpp" "..\..\..\..\Vector Files\cursor.cpp" "..\..\..\..\Vector Files\dashboard.cpp" "..\..\..\..\Vector Files\event.cpp" "..\..\..\..\Vector Files\font.cpp" "..\..\..\..\Vector Files\fwk_gfx.cpp" "..\..\..\..\Vector Files\game.cpp" "..\..\..\..\Vector Files\graphics_init.cpp" "..\..\..\..\Vector Files\lobby.cpp" "..\..\..\..\Vector Files\main.cpp" "..\..\..\..\Vector Files\map.cpp" "..\..\..\..\Vector Files\player.cpp" "..\..\..\..\Vector Files\render.cpp" "..\..\..\..\Vector Files\server.cpp" "..\..\..\..\Vector Files\start.cpp" "..\..\..\..\Vector Files\test_gfx.cpp" "..\..\..\..\Vector Files\unit.cpp"
+         unit.cpp
+         test_gfx.cpp
+         start.cpp
+         server.cpp
+         render.cpp
+         player.cpp
+         map.cpp
+         main.cpp
+         lobby.cpp
+     1>c:\users\lucas\documents\vector files\lobby.cpp(114): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\lucas\documents\vector files\lobby.cpp(115): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\lucas\documents\vector files\lobby.cpp(116): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\lucas\documents\vector files\lobby.cpp(162): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+         graphics_init.cpp
+     1>c:\users\lucas\documents\vector files\graphics_init.cpp(71): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+         game.cpp
+         fwk_gfx.cpp
+         font.cpp
+     1>c:\users\lucas\documents\vector files\font.cpp(117): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         event.cpp
+         dashboard.cpp
+     1>c:\users\lucas\documents\vector files\dashboard.cpp(59): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\lucas\documents\vector files\dashboard.cpp(60): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\lucas\documents\vector files\dashboard.cpp(65): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\lucas\documents\vector files\dashboard.cpp(66): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\lucas\documents\vector files\dashboard.cpp(85): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\lucas\documents\vector files\dashboard.cpp(86): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\lucas\documents\vector files\dashboard.cpp(91): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\lucas\documents\vector files\dashboard.cpp(92): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+         cursor.cpp
+         client.cpp
+         camera.cpp
+         block.cpp
+     1>c:\users\lucas\documents\vector files\block.cpp(39): warning C4018: '<' : signed/unsigned mismatch
+         beam.cpp
+     1>c:\users\lucas\documents\vector files\beam.cpp(30): warning C4305: '=' : truncation from 'double' to 'GLfloat'
+     1>c:\users\lucas\documents\vector files\beam.cpp(45): warning C4244: 'initializing' : conversion from 'GLfloat' to 'uint32_t', possible loss of data
+     1>c:\users\lucas\documents\vector files\beam.cpp(47): warning C4244: 'initializing' : conversion from 'uint32_t' to 'GLfloat', possible loss of data
+     1>c:\users\lucas\documents\vector files\beam.cpp(50): warning C4244: 'initializing' : conversion from 'const float' to 'uint32_t', possible loss of data
+     1>c:\users\lucas\documents\vector files\beam.cpp(52): warning C4244: 'initializing' : conversion from 'uint32_t' to 'GLfloat', possible loss of data
+     1>c:\users\lucas\documents\vector files\beam.cpp(76): warning C4244: 'initializing' : conversion from 'int' to 'GLfloat', possible loss of data
+     1>c:\users\lucas\documents\vector files\beam.cpp(84): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\lucas\documents\vector files\beam.cpp(93): warning C4305: 'argument' : truncation from 'int' to 'uint16_t'
+     1>c:\users\lucas\documents\vector files\beam.cpp(93): warning C4309: 'argument' : truncation of constant value
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\lucas\documents\visual studio 2013\Projects\Vector\Debug\Vector.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib OpenGL32.lib freeglut.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\lucas\documents\visual studio 2013\Projects\Vector\Debug\Vector.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\lucas\documents\visual studio 2013\Projects\Vector\Debug\Vector.lib" /MACHINE:X86 Debug\beam.obj
+         Debug\block.obj
+         Debug\camera.obj
+         Debug\client.obj
+         Debug\cursor.obj
+         Debug\dashboard.obj
+         Debug\event.obj
+         Debug\font.obj
+         Debug\fwk_gfx.obj
+         Debug\game.obj
+         Debug\graphics_init.obj
+         Debug\lobby.obj
+         Debug\main.obj
+         Debug\map.obj
+         Debug\player.obj
+         Debug\render.obj
+         Debug\server.obj
+         Debug\start.obj
+         Debug\test_gfx.obj
+         Debug\unit.obj
+     1>MSVCRTD.lib(cinitexe.obj) : warning LNK4098: defaultlib 'msvcrt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
+         Vector.vcxproj -> c:\users\lucas\documents\visual studio 2013\Projects\Vector\Debug\Vector.exe
+     1>Done Building Project "c:\Users\Lucas\documents\visual studio 2013\Projects\Vector\Vector\Vector.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.55

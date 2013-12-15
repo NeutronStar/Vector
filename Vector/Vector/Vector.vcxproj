@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9996DC91-8396-4F69-B699-E20E6DAB5D2F}</ProjectGuid>
+    <RootNamespace>Vector</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Cpp Dev Libs\SDL2-2.0.1\include;C:\Cpp Dev Libs\freeglut\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Cpp Dev Libs\SDL2-2.0.1\lib\x86;C:\Cpp Dev Libs\freeglut\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;OpenGL32.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Vector Files\beam.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\block.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\camera.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\client.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\cursor.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\dashboard.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\event.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\font.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\fwk_gfx.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\game.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\graphics_init.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\lobby.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\main.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\map.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\player.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\render.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\server.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\start.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\test_gfx.cpp" />
+    <ClCompile Include="..\..\..\..\Vector Files\unit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Downloads\dashboard.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\beam.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\bitstream.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\block.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\camera.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\client.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\constants.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\cursor.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\event.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\font.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\font_maps.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\fwk_data.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\fwk_gfx.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\game.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\graphics_init.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\lobby.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\main.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\map.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\player.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\render.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\server.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\start.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\test_gfx.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\unit.h" />
+    <ClInclude Include="..\..\..\..\Vector Files\wedge.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
